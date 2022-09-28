@@ -2,29 +2,28 @@
 	<nav>
 		<router-link to="/">Welcome</router-link>
 		<router-link to="/skills">Skills</router-link>
+		<router-link to="/projects">Projects</router-link>
 		<router-link to="/contact">Contact</router-link>
 	</nav>
-	<router-view v-slot="{ Component }">
-		<transition name="slide">
-			<component :is="Component" />
-		</transition>
-	</router-view>
+	<router-view> </router-view>
 </template>
 
 <script>
-export default {}
+export default {
+	name: "NavBar"
+}
 </script>
 
 <style>
 nav {
-	position: fixed;
-	z-index: 5;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	top: 50%;
-	transform: translateY(-50%);
 }
 a {
 	transition: all 0.25s;
@@ -38,23 +37,6 @@ a:hover,
 .router-link-active,
 .router-link-exact-active {
 	color: rgba(202, 168, 245);
-}
-.slide-enter-active,
-.slide-leave-active {
-	transition: all 1s ease-out;
-}
-.slide-enter-to {
-	position: relative;
-	left: 0;
-}
-.slide-leave {
-	position: absolute;
-}
-.slide-enter {
-	left: -100vw;
-	position: absolute;
-}
-.slide-leave-to {
-	right: -100vw;
+	text-shadow: -2px 2px rgba(69, 69, 69, 0.5);
 }
 </style>

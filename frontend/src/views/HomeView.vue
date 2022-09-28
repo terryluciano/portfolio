@@ -35,7 +35,7 @@ export default {
 
 <style>
 #home-page {
-	background: url(@/assets/backgroundv2.png) no-repeat center center fixed;
+	background: url(@/assets/backgroundv3.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -43,15 +43,6 @@ export default {
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
-}
-.background-c {
-	background-color: rgba(35, 12, 51, 0.5);
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 100vw;
-	height: 100vh;
 }
 p {
 	margin: 0;

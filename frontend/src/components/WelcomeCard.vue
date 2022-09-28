@@ -37,11 +37,12 @@ export default {
 	justify-content: center;
 	align-items: center;
 	background: rgba(202, 168, 245, 0.5);
-	color: white;
+	color: #f8f4e3;
 	padding: 50px 100px;
 	border-radius: 20px;
 	text-align: center;
 	font-family: "Reem Kufi Ink";
+	transition: all 0.5s ease;
 }
 .welcome-card h2 {
 	margin: 0px;
@@ -55,5 +56,6 @@ export default {
 	margin: 10px 0px 0px 0px;
 	font-family: "Poppins";
 	max-width: 400px;
+	text-align: justify;
 }
 </style>
