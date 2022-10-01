@@ -56,7 +56,7 @@ export default {
 	background-image: url("@/assets/backpatternv4test.png");
 	background-repeat: repeat;
 	position: relative;
-	animation: bgAnimated 20s linear infinite;
+	animation: bgAnimated 40s linear infinite;
 }
 
 @keyframes bgAnimated {
